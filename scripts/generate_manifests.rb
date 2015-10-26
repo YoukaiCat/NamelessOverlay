@@ -1,20 +1,44 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-script_path = File.expand_path File.dirname __FILE__
-overlay_path = script_path + '/..'
+class ManifestGenerator
 
-exclude = '. .. metadata profiles scripts'.split
-
-Dir.foreach overlay_path do |subdir|
-  subdir_path = overlay_path + '/' + subdir
-  if File.stat(subdir_path).directory? && (!exclude.include? subdir) then
-    Dir.foreach subdir_path do |package_name|
-      package_path = subdir_path + '/' + package_name
-      if File.stat(package_path).directory? && (!['.', '..'].include? package_name) then
-        ebuild_path = package_path  + '/' + package_name
-        puts `ebuild #{ebuild_path}-* manifest`
-      end
-    end
-  end
+def initialize overlay
+  @overlay_root = overlay
 end
+
+def run
+  dirs_to_exclude = %w(. .. .git metadata profiles scripts)
+  Dir.entries(@overlay_root).
+      select {|subdir| File.stat(@overlay_root + '/' + subdir).directory? }.
+      reject {|subdir| dirs_to_exclude.include? subdir }.
+      each {|category| process_category category, @overlay_root + '/' + category }
+end
+
+def process_category category, category_path
+  puts "*** #{category}"
+  Dir.entries(category_path).
+      select {|subdir| File.stat(category_path + '/' + subdir).directory? }.
+      reject {|subdir| %w(. ..).include? subdir }.
+      each {|package| process_package package, category_path + '/' + package }
+end
+
+def process_package package, package_path
+  puts "\t~~~ #{package}"
+  Dir.entries(package_path).
+      select {|file| File.fnmatch('**.ebuild', file) }.
+      each {|ebuild| process_ebuild ebuild, package_path }
+end
+
+def process_ebuild ebuild, package_path
+  puts "\t\t--- #{ebuild}"
+  ebuild_path = package_path + '/' + ebuild
+  puts "\t\t\t" + `ebuild #{ebuild_path} manifest`
+end
+
+end
+
+script = File.expand_path File.dirname __FILE__
+overlay = script + '/..'
+
+ManifestGenerator.new(overlay).run
