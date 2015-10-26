@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories version="1.0">
-	<repo quality="experimental" status="unofficial">
+	<repo priority="50" quality="experimental" status="unofficial">
 		<name>nameless</name>
 		<description lang="en">Various ebuilds</description>
 		<homepage>https://github.com/YoukaiCat/NamelessOverlay</homepage>
