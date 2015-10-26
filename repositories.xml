@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
 <repositories version="1.0">
-	<repo priority="50" quality="experimental" status="unofficial">
-		<name>nameless</name>
-		<description lang="en">Various ebuilds</description>
-		<homepage>https://github.com/YoukaiCat/NamelessOverlay</homepage>
-		<owner type="person">
-				<email>noein93@gmail.com</email>
-		</owner>
-		<source type="git">https://github.com/YoukaiCat/NamelessOverlay.git</source>
-		<feed>https://github.com/YoukaiCat/NamelessOverlay/commits/master.atom</feed>
-	</repo>
+    <repo priority="50" quality="experimental" status="unofficial">
+        <name>nameless</name>
+        <description lang="en">Various ebuilds</description>
+        <homepage>https://github.com/YoukaiCat/NamelessOverlay</homepage>
+        <owner type="person">
+            <email>noein93@gmail.com</email>
+        </owner>
+        <source type="git">https://github.com/YoukaiCat/NamelessOverlay.git</source>
+        <feed>https://github.com/YoukaiCat/NamelessOverlay/commits/master.atom</feed>
+    </repo>
 </repositories>
