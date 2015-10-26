@@ -22,12 +22,14 @@ RDEPEND="dev-libs/gmp
          dev-libs/libgcrypt
          dev-util/cmake
          dev-util/scons
-         !net-p2p/netsukuku-vala-meta
+         !net-p2p/netsukuku-vala-andnsrpc
          !net-p2p/netsukuku-vala-coordinator
+         !net-p2p/netsukuku-vala-meta
          !net-p2p/netsukuku-vala-neighborhood
          !net-p2p/netsukuku-vala-ntkd-common
          !net-p2p/netsukuku-vala-ntkd-tasklet-system
          !net-p2p/netsukuku-vala-ntkdrpc
+         !net-p2p/netsukuku-vala-ntkresolv
          !net-p2p/netsukuku-vala-peerservices
          !net-p2p/netsukuku-vala-qspn
          !net-p2p/netsukuku-vala-tasklet

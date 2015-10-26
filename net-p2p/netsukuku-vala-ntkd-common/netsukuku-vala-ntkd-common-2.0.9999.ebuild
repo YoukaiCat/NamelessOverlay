@@ -12,13 +12,25 @@ HOMEPAGE="https://savannah.nongnu.org/projects/netsukuku/"
 EBZR_REPO_URI="http://bzr.savannah.gnu.org/r/netsukuku/2.0/ntkd-common/"
 
 LICENSE="GPL-3"
-SLOT="0"
+SLOT="2.0"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 
 RDEPEND="dev-lang/vala
          dev-libs/vala-common
          dev-libs/glib
          dev-libs/libgee
+         !net-p2p/netsukuku-vala-andnsrpc:1.0
+         !net-p2p/netsukuku-vala-coordinator:1.0
+         !net-p2p/netsukuku-vala-meta:1.0
+         !net-p2p/netsukuku-vala-neighborhood:1.0
+         !net-p2p/netsukuku-vala-ntkd-common:1.0
+         !net-p2p/netsukuku-vala-ntkd-tasklet-system:1.0
+         !net-p2p/netsukuku-vala-ntkdrpc:1.0
+         !net-p2p/netsukuku-vala-ntkresolv:1.0
+         !net-p2p/netsukuku-vala-peerservices:1.0
+         !net-p2p/netsukuku-vala-qspn:1.0
+         !net-p2p/netsukuku-vala-tasklet:1.0
+         !net-p2p/netsukuku-vala-zcd:1.0
          !net-p2p/netsukuku-c
 "
 DEPEND="${RDEPEND}"
