@@ -43,10 +43,10 @@ S=${WORKDIR}/ntkresolv-${PV}
 # Workaround
 # ACCESS DENIED: open_wr: /etc/ld.so.cache~
 src_configure() {
-	sed -i -e 's/install-exec-hook\://g' "${D}"/Makefile.am
-	sed -i -e 's/$(LDCONFIG)//g' "${D}"/Makefile.am
-	sed -i -e 's/install-exec-hook\://g' "${D}"/Makefile.in
-	sed -i -e 's/$(LDCONFIG)//g' "${D}"/Makefile.in
+	sed -i -e 's/install-exec-hook\://g' "${S}/Makefile.am"
+	sed -i -e 's/$(LDCONFIG)//g' "${S}/Makefile.am"
+	sed -i -e 's/install-exec-hook\://g' "${S}/Makefile.in"
+	sed -i -e 's/$(LDCONFIG)//g' "${S}/Makefile.in"
 	econf $(use_enable logtasklet)
 }
 
