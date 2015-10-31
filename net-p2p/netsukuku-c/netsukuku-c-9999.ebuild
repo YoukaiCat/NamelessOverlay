@@ -15,13 +15,11 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 
-RDEPEND="dev-libs/gmp
-         dev-libs/openssl
-         dev-libs/libgee
+RDEPEND="dev-libs/gmp:*
+         dev-libs/openssl:*
+         dev-libs/libgee:*
          dev-libs/pth
-         dev-libs/libgcrypt
-         dev-util/cmake
-         dev-util/scons
+         dev-libs/libgcrypt:*
          !net-p2p/netsukuku-vala-andnsrpc
          !net-p2p/netsukuku-vala-coordinator
          !net-p2p/netsukuku-vala-meta
@@ -35,7 +33,11 @@ RDEPEND="dev-libs/gmp
          !net-p2p/netsukuku-vala-tasklet
          !net-p2p/netsukuku-vala-zcd
 "
-DEPEND="${RDEPEND}"
+
+DEPEND="dev-util/cmake
+        dev-util/scons
+        ${RDEPEND}
+"
 
 pkg_pretend() {
 	CONFIG_CHECK="
@@ -64,5 +66,5 @@ src_compile() {
 }
 
 src_install() {
-	escons DESTDIR=${D} CONF_DIR=${D}/etc/netsukuku MAN_DIR=${D}/usr/local/share/man BIN_DIR=${D}/usr/bin  install || die "scons install failed"
+	escons DESTDIR="${D}" CONF_DIR="${D}"/etc/netsukuku MAN_DIR="${D}"/usr/local/share/man BIN_DIR="${D}"/usr/bin install || die "scons install failed"
 }

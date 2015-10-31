@@ -15,10 +15,10 @@ LICENSE="GPL-3"
 SLOT="2.0"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 
-RDEPEND="dev-lang/vala
+RDEPEND="dev-lang/vala:*
          dev-libs/vala-common
-         dev-libs/glib
-         dev-libs/libgee
+         dev-libs/glib:*
+         dev-libs/libgee:*
          dev-libs/pth
          !net-p2p/netsukuku-vala-andnsrpc:1.0
          !net-p2p/netsukuku-vala-coordinator:1.0
@@ -41,11 +41,14 @@ src_prepare() {
 	eautoreconf
 }
 
-src_compile() {
+src_configure() {
 	econf
+}
+
+src_compile() {
 	emake
 }
 
 src_install() {
-	emake DESTDIR=${D} install
+	emake DESTDIR="${D}" install
 }

@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit vala autotools
+inherit vala
 
 DESCRIPTION="Netsukuku mesh network. Vala version."
 HOMEPAGE="https://savannah.nongnu.org/projects/netsukuku/"
@@ -16,11 +16,11 @@ SLOT="1.0"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 IUSE="logtasklet"
 
-RDEPEND="dev-lang/vala
+RDEPEND="dev-lang/vala:*
          dev-libs/vala-common
-         dev-libs/glib
-         dev-libs/libgee
-         dev-libs/libgcrypt
+         dev-libs/glib:*
+         dev-libs/libgee:*
+         dev-libs/libgcrypt:*
          =net-p2p/netsukuku-vala-tasklet-${PV}:1.0
          =net-p2p/netsukuku-vala-zcd-${PV}:1.0
          =net-p2p/netsukuku-vala-ntkdrpc-${PV}:1.0
@@ -53,5 +53,5 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR=${D} install
+	emake DESTDIR="${D}" install
 }

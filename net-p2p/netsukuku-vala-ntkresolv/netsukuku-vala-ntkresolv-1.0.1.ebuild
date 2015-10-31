@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit vala autotools
+inherit vala
 
 DESCRIPTION="Netsukuku mesh network. Vala version."
 HOMEPAGE="https://savannah.nongnu.org/projects/netsukuku/"
@@ -16,10 +16,10 @@ SLOT="1.0"
 KEYWORDS="~x86 ~amd64 ~arm ~arm64"
 IUSE="logtasklet"
 
-RDEPEND="dev-lang/vala
+RDEPEND="dev-lang/vala:*
          dev-libs/vala-common
-         dev-libs/glib
-         dev-libs/libgee
+         dev-libs/glib:*
+         dev-libs/libgee:*
          =net-p2p/netsukuku-vala-zcd-${PV}:1.0
          =net-p2p/netsukuku-vala-andnsrpc-${PV}:1.0
          !net-p2p/netsukuku-vala-andnsrpc:2.0
@@ -43,10 +43,10 @@ S=${WORKDIR}/ntkresolv-${PV}
 # Workaround
 # ACCESS DENIED: open_wr: /etc/ld.so.cache~
 src_configure() {
-	sed -i -e 's/install-exec-hook\://g' ${S}/Makefile.am
-	sed -i -e 's/$(LDCONFIG)//g' ${S}/Makefile.am
-	sed -i -e 's/install-exec-hook\://g' ${S}/Makefile.in
-	sed -i -e 's/$(LDCONFIG)//g' ${S}/Makefile.in
+	sed -i -e 's/install-exec-hook\://g' "${D}"/Makefile.am
+	sed -i -e 's/$(LDCONFIG)//g' "${D}"/Makefile.am
+	sed -i -e 's/install-exec-hook\://g' "${D}"/Makefile.in
+	sed -i -e 's/$(LDCONFIG)//g' "${D}"/Makefile.in
 	econf $(use_enable logtasklet)
 }
 
@@ -55,5 +55,5 @@ src_compile() {
 }
 
 src_install() {
-	make DESTDIR=${D} install
+	make DESTDIR="${D}" install
 }
