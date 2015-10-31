@@ -9,7 +9,7 @@ inherit bzr vala autotools
 DESCRIPTION="Netsukuku mesh network. Vala version."
 HOMEPAGE="https://savannah.nongnu.org/projects/netsukuku/"
 
-EBZR_REPO_URI="http://bzr.savannah.gnu.org/r/netsukuku/1.0/coordinator/"
+EBZR_REPO_URI="http://bzr.savannah.gnu.org/r/netsukuku/2.0/coordinator/"
 
 LICENSE="GPL-3"
 SLOT="2.0"
