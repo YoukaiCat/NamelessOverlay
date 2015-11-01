@@ -20,6 +20,7 @@ layman -o https://raw.githubusercontent.com/YoukaiCat/NamelessOverlay/master/rep
 # Overlay contents
 | Name                               | Status               | Note                                                                      |
 |------------------------------------|----------------------|---------------------------------------------------------------------------|
+|mac-telnet                          | Installs             |                                                                           |
 |netsukuku-c                         | Installs             |                                                                           |
 |netsukuku-vala-meta (1.0)           | N/A                  | problems with downloading sources. You may need to download them manually |
 |netsukuku-vala-andnsrpc             | Installs             |                                                                           |
