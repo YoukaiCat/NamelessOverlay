@@ -13,7 +13,7 @@ EBZR_REPO_URI="http://bzr.savannah.gnu.org/r/netsukuku/2.0/peerservices/"
 
 LICENSE="GPL-3"
 SLOT="2.0"
-KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+KEYWORDS=""
 
 RDEPEND="dev-lang/vala:*
          dev-libs/vala-common

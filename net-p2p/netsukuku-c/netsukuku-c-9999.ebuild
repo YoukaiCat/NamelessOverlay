@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/Netsukuku/netsukuku.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+KEYWORDS=""
 
 RDEPEND="dev-libs/gmp:*
          dev-libs/openssl:*

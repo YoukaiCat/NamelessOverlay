@@ -10,7 +10,7 @@ SRC_URI=""
 
 LICENSE="GPL-3"
 SLOT="2.0"
-KEYWORDS="~x86 ~amd64 ~arm ~arm64"
+KEYWORDS=""
 
 RDEPEND="=net-p2p/netsukuku-vala-coordinator-${PV}:2.0
          =net-p2p/netsukuku-vala-neighborhood-${PV}:2.0
