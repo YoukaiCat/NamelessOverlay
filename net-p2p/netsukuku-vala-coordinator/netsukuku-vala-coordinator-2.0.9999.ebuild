@@ -45,14 +45,6 @@ src_prepare() {
 	eautoreconf
 }
 
-src_configure() {
-	econf
-}
-
-src_compile() {
-	emake
-}
-
 src_install() {
 	emake DESTDIR="${D}" install
 }

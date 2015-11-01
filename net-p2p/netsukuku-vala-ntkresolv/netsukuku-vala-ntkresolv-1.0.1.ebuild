@@ -50,10 +50,6 @@ src_configure() {
 	econf $(use_enable logtasklet)
 }
 
-src_compile() {
-	emake
-}
-
 src_install() {
 	make DESTDIR="${D}" install
 }
