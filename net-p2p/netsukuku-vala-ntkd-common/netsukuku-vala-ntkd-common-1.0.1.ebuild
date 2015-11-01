@@ -13,7 +13,7 @@ RESTRICT="mirror"
 
 LICENSE="GPL-3"
 SLOT="1.0"
-KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
+KEYWORDS=""
 IUSE="logtasklet"
 
 RDEPEND="dev-lang/vala:*

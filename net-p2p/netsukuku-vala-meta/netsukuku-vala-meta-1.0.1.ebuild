@@ -10,7 +10,7 @@ SRC_URI=""
 
 LICENSE="GPL-3"
 SLOT="1.0"
-KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
+KEYWORDS=""
 
 RDEPEND="=net-p2p/netsukuku-vala-tasklet-${PV}:1.0
          =net-p2p/netsukuku-vala-zcd-${PV}:1.0
