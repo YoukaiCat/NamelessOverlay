@@ -1,0 +1,11 @@
+--- qt.m4	2013-10-22 15:27:03.579975070 +0400
++++ qt_.m4	2013-10-23 21:00:57.894197699 +0400
+@@ -17,7 +17,7 @@
+   qt_dir_include=""
+   qt_dir_lib=""
+   qt_dir_bin=""
+-  qt_libs="-lQtGui -lQtCore -lQtAssistantClient -lQtNetwork"
++  qt_libs="-lQtGui -lQtCore -lQtNetwork"
+   MOC=""
+   UIC=""
+ 
