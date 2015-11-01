@@ -8,10 +8,10 @@ inherit subversion autotools
 
 DESCRIPTION="Qt based GUI for unixODBC"
 HOMEPAGE="http://sourceforge.net/projects/unixodbc-gui-qt/"
-ESVN_REPO_URI="svn://svn.code.sf.net/p/unixodbc-gui-qt/code/trunk"
+ESVN_REPO_URI="svn://svn.code.sf.net/p/unixodbc-gui-qt/code/trunk@100"
 
 LICENSE="GPL-3 LGPL-3"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 SLOT="0"
 
 DEPEND=">=dev-db/unixODBC-2.3.0
