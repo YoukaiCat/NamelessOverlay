@@ -44,3 +44,5 @@ layman -o https://raw.githubusercontent.com/YoukaiCat/NamelessOverlay/master/rep
 |netsukuku-vala-zcd                  | Installs             |                                                                           |
 
 All commits and manifests are signed. Signing key: 0x57EE184C at http://keys.gnupg.net/. Fpr: 68C1 93F3 C8BC EC64 AC6E  092F 405F 3E77 57EE 184C
+
+This repository includes .travis.yml [developed](https://github.com/mrueg/repoman-travis) by Manuel Rüger and released under MIT license. See licenses/repoman-travis_MIT_license for details.
