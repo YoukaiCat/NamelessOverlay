@@ -17,6 +17,8 @@ auto-sync = Yes
 layman -o https://raw.githubusercontent.com/YoukaiCat/NamelessOverlay/master/repositories.xml -f -a nameless
 ```
 
+Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverlay.svg)](https://travis-ci.org/YoukaiCat/NamelessOverlay)
+
 # Overlay contents
 | Name                               | Status               | Note                                                                      |
 |------------------------------------|----------------------|---------------------------------------------------------------------------|
