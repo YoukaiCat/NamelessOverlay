@@ -22,6 +22,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 # Overlay contents
 | Name                               | Status               | Note                                                                      |
 |------------------------------------|----------------------|---------------------------------------------------------------------------|
+|mosml                               | Installs             |                                                                           |
 |mac-telnet                          | Installs             |                                                                           |
 |unixodbc-gui-qt                     | Installs             |                                                                           |
 |mimic                               | Installs             |                                                                           |
