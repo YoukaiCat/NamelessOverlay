@@ -22,6 +22,8 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 # Overlay contents
 | Name                               | Status               | Note                                                                      |
 |------------------------------------|----------------------|---------------------------------------------------------------------------|
+|purple-vk-plugin                    | Installs             |                                                                           |
+|skypeweb                            | Installs             |                                                                           |
 |mosml                               | Installs             |                                                                           |
 |mac-telnet                          | Installs             |                                                                           |
 |unixodbc-gui-qt                     | Installs             |                                                                           |
