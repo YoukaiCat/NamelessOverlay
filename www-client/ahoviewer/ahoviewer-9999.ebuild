@@ -11,7 +11,7 @@ HOMEPAGE="https://github.com/ahodesuka/ahoviewer"
 
 EGIT_REPO_URI="https://github.com/ahodesuka/ahoviewer.git"
 
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
 IUSE=""

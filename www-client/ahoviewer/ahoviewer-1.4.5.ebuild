@@ -10,7 +10,7 @@ DESCRIPTION="A GTK2 image viewer, manga reader, and booru browser"
 HOMEPAGE="https://github.com/ahodesuka/ahoviewer"
 SRC_URI="https://github.com/ahodesuka/ahoviewer/archive/${PV}.zip -> ${P}.zip"
 
-LICENSE="GPL-3"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
