@@ -20,33 +20,23 @@ layman -o https://raw.githubusercontent.com/YoukaiCat/NamelessOverlay/master/rep
 Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverlay.svg)](https://travis-ci.org/YoukaiCat/NamelessOverlay)
 
 # Overlay contents
-| Name                               | Status               | Note                                                                      |
-|------------------------------------|----------------------|---------------------------------------------------------------------------|
-|purple-vk-plugin                    | Installs             |                                                                           |
-|skypeweb                            | Installs             |                                                                           |
-|mosml                               | Installs             |                                                                           |
-|mac-telnet                          | Installs             |                                                                           |
-|unixodbc-gui-qt                     | Installs             |                                                                           |
-|mimic                               | Installs             |                                                                           |
-|ciopfs                              | Installs             |                                                                           |
-|netsukuku-c                         | Installs             |                                                                           |
-|netsukuku-vala-meta (1.0)           | N/A                  | problems with downloading sources. You may need to download them manually |
-|netsukuku-vala-andnsrpc             | Installs             |                                                                           |
-|netsukuku-vala-ntkresolv            | Installs             |                                                                           |
-|netsukuku-vala-ntkd-common (1.0)    | Fails at compilation |                                                                           |
-|netsukuku-vala-ntkdrpc (1.0)        | Installs             |                                                                           |
-|netsukuku-vala-tasklet (1.0)        | Installs             |                                                                           |
-|netsukuku-vala-zcd (1.0)            | Installs             |                                                                           |
-|netsukuku-vala-meta                 | N/A                  |                                                                           |
-|netsukuku-vala-coordinator          | Fails at compilation |                                                                           |
-|netsukuku-vala-neighborhood         | Installs             |                                                                           |
-|netsukuku-vala-ntkd-tasklet-system  | Installs             |                                                                           |
-|netsukuku-vala-peerservices         | Installs             |                                                                           |
-|netsukuku-vala-qspn                 | Installs             |                                                                           |
-|netsukuku-vala-ntkd-common          | Installs             |                                                                           |
-|netsukuku-vala-ntkdrpc              | Installs             |                                                                           |
-|netsukuku-vala-tasklet              | Installs             |                                                                           |
-|netsukuku-vala-zcd                  | Installs             |                                                                           |
+| Name                               | Desc                                                                   | Installs? |
+|------------------------------------|------------------------------------------------------------------------|-----------|
+| app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 | Yes       |                                                                           | dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              | Yes       |
+| dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              | Yes       |
+| net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               | Yes       |
+| net-im/skypeweb                    | SkypeWeb plugin for Pidgin                                             | Yes       |
+| net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address | Yes       |
+| net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      | Yes       |
+| net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version                                   | No [1]    |
+| net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version                                   | No [2]    |
+| sys-fs/ciopfs                      | Access a regular directory case-insensitively                          | Yes       |
+| www-client/ahoviewer               | A GTK2 image viewer, manga reader, and booru browser                   | Yes       |
+| www-client/danbooru-client         | Application to access Danbooru-based image boards                      | Yes       |
+| x11-misc/qcomicbook                | Viewer for comic book archives that aims at convenience and simplicity | Yes       |
+
+[1] ntkd-common fails at compilation and also has problems with downloading sources. You may need to download them manually.
+[2] coordinator fails at compilation
 
 All commits and manifests are signed. Signing key: 0x57EE184C at http://keys.gnupg.net/. Fpr: 68C1 93F3 C8BC EC64 AC6E  092F 405F 3E77 57EE 184C
 
