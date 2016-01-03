@@ -15,17 +15,18 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="kde-frameworks/kiconthemes
-         kde-frameworks/kcoreaddons
-         kde-frameworks/kguiaddons
-         kde-frameworks/kcompletion
-         kde-frameworks/kxmlgui
-         kde-frameworks/kconfigwidgets
-         kde-frameworks/kio
-         kde-frameworks/kwallet
-         kde-frameworks/kdeclarative
-         kde-frameworks/ki18n
-         kde-frameworks/kfilemetadata
+RDEPEND="
+	kde-frameworks/kiconthemes
+	kde-frameworks/kcoreaddons
+	kde-frameworks/kguiaddons
+	kde-frameworks/kcompletion
+	kde-frameworks/kxmlgui
+	kde-frameworks/kconfigwidgets
+	kde-frameworks/kio
+	kde-frameworks/kwallet
+	kde-frameworks/kdeclarative
+	kde-frameworks/ki18n
+	kde-frameworks/kfilemetadata
 "
 
 DEPEND="${RDEPEND}"

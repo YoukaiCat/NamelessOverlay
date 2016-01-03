@@ -16,15 +16,16 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-RDEPEND="dev-cpp/gtkmm:2.4
-         dev-cpp/glibmm:2
-         dev-libs/libconfig
-         net-misc/curl
-         dev-libs/libxml2:2
-         media-libs/gstreamer:1.0
-         app-crypt/libsecret
-         app-arch/unrar
-         dev-libs/libzip
+RDEPEND="
+	dev-cpp/gtkmm:2.4
+	dev-cpp/glibmm:2
+	dev-libs/libconfig
+	net-misc/curl
+	dev-libs/libxml2:2
+	media-libs/gstreamer:1.0
+	app-crypt/libsecret
+	app-arch/unrar
+	dev-libs/libzip
 "
 
 DEPEND="${RDEPEND}"

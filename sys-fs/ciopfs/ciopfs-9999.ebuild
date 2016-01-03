@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -14,8 +14,9 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 
-DEPEND="sys-fs/fuse
-        sys-apps/attr
+DEPEND="
+	sys-fs/fuse
+	sys-apps/attr
 "
 
 RDEPEND="${RDEPEND}"
