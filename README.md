@@ -31,8 +31,8 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version                                   | No [1]    |
 | net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version                                   | No [2]    |
 | sys-fs/ciopfs                      | Access a regular directory case-insensitively                          | Yes       |
-| www-client/ahoviewer               | A GTK2 image viewer, manga reader, and booru browser                   | Yes       |
-| www-client/danbooru-client         | Application to access Danbooru-based image boards                      | Yes       |
+| x11-misc/ahoviewer               | A GTK2 image viewer, manga reader, and booru browser                   | Yes       |
+| x11-misc/danbooru-client         | Application to access Danbooru-based image boards                      | Yes       |
 | x11-misc/qcomicbook                | Viewer for comic book archives that aims at convenience and simplicity | Yes       |
 
 [1] ntkd-common fails at compilation and also has problems with downloading sources. You may need to download them manually.
