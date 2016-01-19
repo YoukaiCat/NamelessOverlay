@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <use>
+    <flag name='python'>Build Python bindings</flag>
+  </use>
+  <use>
+    <flag name='tools'>Build DHT tools</flag>
+  </use>
+  <use>
+    <flag name='debug'>Build with debug flags</flag>
+  </use>
+</pkgmetadata>
