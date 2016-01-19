@@ -9,6 +9,7 @@ inherit cmake-utils
 DESCRIPTION="Application to access Danbooru-based image boards"
 HOMEPAGE="https://www.dennogumi.org/projects/danbooru-client/"
 SRC_URI="https://www.dennogumi.org/releases/danbooru-client-0.5.0.tar.xz"
+RESTRICT="mirror"
 
 LICENSE="GPL-2"
 SLOT="0"

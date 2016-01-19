@@ -8,7 +8,8 @@ inherit autotools-utils
 
 DESCRIPTION="A GTK2 image viewer, manga reader, and booru browser"
 HOMEPAGE="https://github.com/ahodesuka/ahoviewer"
-SRC_URI="https://github.com/ahodesuka/ahoviewer/archive/${PV}.zip -> ${P}.zip"
+SRC_URI="https://github.com/ahodesuka/ahoviewer/archive/${PV}.tar.gz -> ${P}.tar.gz"
+RESTRICT="mirror"
 
 LICENSE="MIT"
 SLOT="0"
