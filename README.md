@@ -29,6 +29,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | net-im/skypeweb                    | SkypeWeb plugin for Pidgin                                             | Yes       |
 | net-libs/opendht                   | C++11 Distributed Hash Table implementation                            | Yes       |
 | net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address | Yes       |
+| net-misc/youtube-dl-gui            | Front-end GUI of the popular youtube-dl written in wxPython            | Yes       |
 | net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      | Yes       |
 | net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version                                   | No [1]    |
 | net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version                                   | No [2]    |
