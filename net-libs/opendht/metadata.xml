@@ -3,11 +3,7 @@
 <pkgmetadata>
   <use>
     <flag name='python'>Build Python bindings</flag>
-  </use>
-  <use>
     <flag name='tools'>Build DHT tools</flag>
-  </use>
-  <use>
     <flag name='debug'>Build with debug flags</flag>
   </use>
 </pkgmetadata>

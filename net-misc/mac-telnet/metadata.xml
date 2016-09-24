@@ -3,14 +3,8 @@
 <pkgmetadata>
   <use>
     <flag name='mactelnet'>MAC-telnet client</flag>
-  </use>
-  <use>
     <flag name='mactelnetd'>MAC-telnet daemon</flag>
-  </use>
-  <use>
     <flag name='macping'>A tool for pinging other RouterOS or mactelnetd devices</flag>
-  </use>
-  <use>
     <flag name='mndp'>A tool for discovering other RouterOS or mactelnetd devices</flag>
   </use>
 </pkgmetadata>
