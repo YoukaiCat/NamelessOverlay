@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <use>
+    <flag name="idle">Enable idle module</flag>
+    <flag name="srv">SRV capabilities</flag>
+    <flag name="xhtml">Enable XHTML support</flag>
+  </use>
+</pkgmetadata>

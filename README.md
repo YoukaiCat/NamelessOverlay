@@ -22,9 +22,12 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 # Overlay contents
 | Name                               | Desc                                                                   | Installs? |
 |------------------------------------|------------------------------------------------------------------------|-----------|
-| app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 | Yes       |                                                                           | dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              | Yes       |
+| app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 | Yes       |
+| dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              | Yes       |
 | dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              | Yes       |
 | dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        | Yes       |
+| net-im/gajim                       | Jabber client written in PyGTK. Live version                           | Yes       |
+| net-im/gajim-omemo-groupchat       | Gajim plugin for XEP proposal: OMEMO Encryption. Grpoupchat enabled ver| Yes       |
 | net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               | Yes       |
 | net-im/skypeweb                    | SkypeWeb plugin for Pidgin                                             | Yes       |
 | net-libs/opendht                   | C++11 Distributed Hash Table implementation                            | Yes       |
@@ -40,6 +43,9 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 
 [1] ntkd-common fails at compilation and also has problems with downloading sources. You may need to download them manually.  
 [2] coordinator fails at compilation
+
+net-im/gajim based on original gentoo ebuild.  
+net-im/gajim-omemo-groupchat based on [net-im/gajim-omemo](https://gitlab.com/Flow/flow-s-ebuilds/tree/master/net-im/gajim-omemo) ebuild by Florian Schmaus.
 
 All commits and manifests are signed. Signing key: 0x57EE184C at http://keys.gnupg.net/. Fpr: 68C1 93F3 C8BC EC64 AC6E  092F 405F 3E77 57EE 184C
 
