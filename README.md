@@ -36,6 +36,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      | Yes       |
 | net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version                                   | No [1]    |
 | net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version                                   | No [2]    |
+| net-p2p/zcash                      | Cryptocurrency that offers privacy of transactions                     | Yes       |
 | sys-fs/ciopfs                      | Access a regular directory case-insensitively                          | Yes       |
 | x11-misc/ahoviewer                 | A GTK2 image viewer, manga reader, and booru browser                   | Yes       |
 | x11-misc/danbooru-client           | Application to access Danbooru-based image boards                      | Yes       |
