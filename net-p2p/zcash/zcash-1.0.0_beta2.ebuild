@@ -6,7 +6,7 @@ EAPI=5
 
 inherit multiprocessing
 
-BETA_VER=1
+BETA_VER=2
 
 DESCRIPTION="Cryptocurrency that offers privacy of transactions"
 HOMEPAGE="https://z.cash/"
