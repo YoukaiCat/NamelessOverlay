@@ -29,7 +29,7 @@ S=${WORKDIR}/zcash-1.0.0-beta${BETA_VER}
 
 src_compile() {
 	sed -i 's/\.\/b2/\.\/b2 --ignore-site-config/g' depends/packages/boost.mk #boost build error
-	unset ABI #libgmp: onfigure: error: ABI=amd64 is not among the following valid choices: 64 x32 32
+	unset ABI #libgmp: configure: error: ABI=amd64 is not among the following valid choices: 64 x32 32
 	./zcutil/build.sh -j$(makeopts_jobs) || die
 }
 
