@@ -9,8 +9,8 @@ HOMEPAGE="https://github.com/siacs/HttpUploadComponent"
 
 inherit git-r3
 
-EGIT_REPO_URI="https://github.com/lovetox/gajim-omemo.git"
-EGIT_BRANCH="groupchat"
+EGIT_REPO_URI="https://github.com/omemo/gajim-omemo.git"
+EGIT_BRANCH="master"
 
 LICENSE="GPL-3"
 SLOT="0"
