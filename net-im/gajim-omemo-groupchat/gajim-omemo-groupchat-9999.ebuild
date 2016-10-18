@@ -5,7 +5,7 @@
 EAPI=5
 
 DESCRIPTION="Gajim plugin for XEP proposal: OMEMO Encryption"
-HOMEPAGE="https://github.com/siacs/HttpUploadComponent"
+HOMEPAGE="https://github.com/omemo/gajim-omemo"
 
 inherit git-r3
 
