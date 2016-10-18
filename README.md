@@ -20,27 +20,27 @@ layman -o https://raw.githubusercontent.com/YoukaiCat/NamelessOverlay/master/rep
 Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverlay.svg)](https://travis-ci.org/YoukaiCat/NamelessOverlay)
 
 # Overlay contents
-| Name                               | Desc                                                                   | Installs? |
-|------------------------------------|------------------------------------------------------------------------|-----------|
-| app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 | Yes       |
-| dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              | Yes       |
-| dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              | Yes       |
-| dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        | Yes       |
-| net-im/gajim                       | Jabber client written in PyGTK. Live version                           | Yes       |
-| net-im/gajim-omemo-groupchat       | Gajim plugin for XEP proposal: OMEMO Encryption. Grpoupchat enabled ver| Yes       |
-| net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               | Yes       |
-| net-im/skypeweb                    | SkypeWeb plugin for Pidgin                                             | Yes       |
-| net-libs/opendht                   | C++11 Distributed Hash Table implementation                            | Yes       |
-| net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address | Yes       |
-| net-misc/youtube-dl-gui            | Front-end GUI of the popular youtube-dl written in wxPython            | Yes       |
-| net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      | Yes       |
-| net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version                                   | No [1]    |
-| net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version                                   | No [2]    |
-| net-p2p/zcash                      | Cryptocurrency that offers privacy of transactions                     | Yes       |
-| sys-fs/ciopfs                      | Access a regular directory case-insensitively                          | Yes       |
-| x11-misc/ahoviewer                 | A GTK2 image viewer, manga reader, and booru browser                   | Yes       |
-| x11-misc/danbooru-client           | Application to access Danbooru-based image boards                      | Yes       |
-| x11-misc/qcomicbook                | Viewer for comic book archives that aims at convenience and simplicity | Yes       |
+| Name                               | Desc                                                                   |
+|------------------------------------|------------------------------------------------------------------------|
+| app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 |
+| dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              |
+| dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              |
+| dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        |
+| net-im/gajim                       | Jabber client written in PyGTK. Live version                           |
+| net-im/gajim-omemo-groupchat       | Gajim plugin for XEP proposal: OMEMO Encryption. Grpoupchat enabled ver|
+| net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               |
+| net-im/skypeweb                    | SkypeWeb plugin for Pidgin                                             |
+| net-libs/opendht                   | C++11 Distributed Hash Table implementation                            |
+| net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address |
+| net-misc/youtube-dl-gui            | Front-end GUI of the popular youtube-dl written in wxPython            |
+| net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      |
+| net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version [1]                               |
+| net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version [2]                               |
+| net-p2p/zcash                      | Cryptocurrency that offers privacy of transactions                     |
+| sys-fs/ciopfs                      | Access a regular directory case-insensitively                          |
+| x11-misc/ahoviewer                 | A GTK2 image viewer, manga reader, and booru browser                   |
+| x11-misc/danbooru-client           | Application to access Danbooru-based image boards                      |
+| x11-misc/qcomicbook                | Viewer for comic book archives that aims at convenience and simplicity |
 
 [1] ntkd-common fails at compilation and also has problems with downloading sources. You may need to download them manually.  
 [2] coordinator fails at compilation
