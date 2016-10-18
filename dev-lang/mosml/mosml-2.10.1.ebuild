@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 DESCRIPTION="Moscow ML is a light-weight implementation of Standard ML (SML)"
 HOMEPAGE="https://github.com/kfl/mosml"
