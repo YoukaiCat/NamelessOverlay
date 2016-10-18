@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit subversion autotools
 
@@ -23,6 +23,7 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	eapply_user
 	epatch "${FILESDIR}/${PN}-remove_qtassistantclient_from_m4_file.patch" || die
 	emake -f Makefile.svn
 }
