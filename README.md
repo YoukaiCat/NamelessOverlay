@@ -34,6 +34,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address |
 | net-misc/nheqminer                 | Equihash miner from NiceHash                                           |
 | net-misc/youtube-dl-gui            | Front-end GUI of the popular youtube-dl written in wxPython            |
+| net-misc/zcash-miner               | Str4d's ZCash miner                                                    |
 | net-p2p/netsukuku-c                | Netsukuku mesh network. C version                                      |
 | net-p2p/netsukuku-vala-meta (1.0)  | Netsukuku mesh network. Vala version [1]                               |
 | net-p2p/netsukuku-vala-meta (2.0)  | Netsukuku mesh network. Vala version [2]                               |
