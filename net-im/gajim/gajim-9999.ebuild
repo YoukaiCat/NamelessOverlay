@@ -80,6 +80,7 @@ RESTRICT="test"
 S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
+	eapply_user
 	echo "define([AC_PACKAGE_VERSION], [9999])" > m4/hgversion.m4 #fix "file 'm4/hgversion.m4' does not exist"
 	echo "[encoding: UTF-8]" > po/POTFILES.in
 	autotools-utils_src_prepare
