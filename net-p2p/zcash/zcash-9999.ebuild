@@ -24,9 +24,12 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-src_compile() {
+src_prepare() {
 	sed -i 's/\.\/b2/\.\/b2 --ignore-site-config/g' depends/packages/boost.mk #boost build error
 	unset ABI #libgmp: configure: error: ABI=amd64 is not among the following valid choices: 64 x32 32
+}
+
+src_compile() {
 	./zcutil/build.sh -j$(makeopts_jobs) || die
 }
 

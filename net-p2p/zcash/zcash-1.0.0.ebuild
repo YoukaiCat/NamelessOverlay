@@ -6,11 +6,9 @@ EAPI=5
 
 inherit multiprocessing
 
-BETA_VER=2
-
 DESCRIPTION="Cryptocurrency that offers privacy of transactions"
 HOMEPAGE="https://z.cash/"
-SRC_URI="https://github.com/zcash/zcash/archive/v1.0.0-beta${BETA_VER}.tar.gz -> ${PV}.tar.gz"
+SRC_URI="https://github.com/zcash/zcash/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -25,11 +23,14 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-S=${WORKDIR}/zcash-1.0.0-beta${BETA_VER}
+S=${WORKDIR}/${P}
 
-src_compile() {
+src_prepare() {
 	sed -i 's/\.\/b2/\.\/b2 --ignore-site-config/g' depends/packages/boost.mk #boost build error
 	unset ABI #libgmp: configure: error: ABI=amd64 is not among the following valid choices: 64 x32 32
+}
+
+src_compile() {
 	./zcutil/build.sh -j$(makeopts_jobs) || die
 }
 
@@ -38,7 +39,7 @@ src_install() {
 	dobin src/zcash-cli
 
 	ewarn "You should manually fetch the parameters for all users:"
-	ewarn "$ wget -O - https://raw.githubusercontent.com/zcash/zcash/v1.0.0-beta${BETA_VER}/zcutil/fetch-params.sh | bash"
+	ewarn "$ wget -O - https://raw.githubusercontent.com/zcash/zcash/v${PV}/zcutil/fetch-params.sh | bash"
 	ewarn " "
 	ewarn "This script will fetch the Zcash zkSNARK parameters and verify"
 	ewarn "their integrity with sha256sum."
