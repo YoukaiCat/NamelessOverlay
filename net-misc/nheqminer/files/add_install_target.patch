@@ -1,0 +1,7 @@
+--- CMakeLists.txt	2017-01-28 22:43:06.579442612 +0300
++++ CMakeLists.txt	2017-01-28 22:43:47.456439755 +0300
+@@ -196,3 +196,4 @@
+     target_link_libraries(${PROJECT_NAME} cuda_djezo)
+ endif()
+
++install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION /usr/bin/)

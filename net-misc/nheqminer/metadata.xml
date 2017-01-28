@@ -1,4 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <use>
+    <flag name='cpu_tromp'>Build Tromp's C solver</flag>
+    <flag name='cpu_xenoncat'>fASM solver (currently doesn't work)</flag>
+    <flag name='cuda_tromp'>CUDA solver</flag>
+	<flag name='cuda_djezo'>CUDA solver</flag>
+  </use>
 </pkgmetadata>

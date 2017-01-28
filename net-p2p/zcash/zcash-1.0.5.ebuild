@@ -1,8 +1,8 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit multiprocessing
 
@@ -26,6 +26,7 @@ RDEPEND="${DEPEND}"
 S=${WORKDIR}/${P}
 
 src_prepare() {
+	eapply_user
 	sed -i 's/\.\/b2/\.\/b2 --ignore-site-config/g' depends/packages/boost.mk #boost build error
 	unset ABI #libgmp: configure: error: ABI=amd64 is not among the following valid choices: 64 x32 32
 }

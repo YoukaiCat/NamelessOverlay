@@ -1,0 +1,14 @@
+--- CMakeLists.txt	2017-01-28 22:19:35.751541219 +0300
++++ CMakeLists.txt	2017-01-28 22:21:08.843534712 +0300
+@@ -53,8 +53,9 @@
+ # BOOST
+ #find_package(Threads REQUIRED COMPONENTS)
+ # compile boost staticaly
+-set(Boost_USE_STATIC_LIBS ON)
+-set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
++set(Boost_USE_STATIC_LIBS OFF)
++set(CMAKE_FIND_LIBRARY_SUFFIXES ".so")
++add_definitions(-DBOOST_LOG_DYN_LINK)
+ #set(BUILD_SHARED_LIBRARIES OFF)
+ #set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
+ find_package(Boost REQUIRED COMPONENTS system log_setup log date_time filesystem thread)
