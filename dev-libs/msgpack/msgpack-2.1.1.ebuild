@@ -20,7 +20,7 @@ HOMEPAGE="http://msgpack.org/ https://github.com/msgpack/msgpack-c/"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="-cxx11 -32bit -boost -examples +cxx +shared"
+IUSE="-cxx11 -32bit -boost -examples +cxx +shared -tests"
 
 DEPEND="
 	dev-cpp/gtest[${MULTILIB_USEDEP}]
@@ -38,6 +38,7 @@ src_configure() {
 		$(cmake-utils_use examples MSGPACK_BUILD_EXAMPLES)
 		$(cmake-utils_use cxx MSGPACK_ENABLE_CXX)
 		$(cmake-utils_use shared MSGPACK_ENABLE_SHARED)
+		$(cmake-utils_use tests MSGPACK_BUILD_TESTS)
 	)
 	cmake-multilib_src_configure
 }
