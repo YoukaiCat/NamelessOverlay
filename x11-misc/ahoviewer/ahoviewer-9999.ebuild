@@ -23,6 +23,9 @@ RDEPEND="
 	net-misc/curl
 	dev-libs/libxml2:2
 	media-libs/gstreamer:1.0
+	media-libs/gst-plugins-bad:1.0
+	media-libs/gst-plugins-good:1.0
+	|| ( media-plugins/gst-plugins-vpx media-plugins/gst-plugins-libav )
 	app-crypt/libsecret
 	app-arch/unrar
 	dev-libs/libzip
