@@ -20,7 +20,7 @@ RDEPEND="
 	dev-libs/gmp:*
 	dev-libs/openssl:*
 	dev-libs/libgee:*
-	dev-libs/pth
+	dev-libs/npth
 	dev-libs/libgcrypt:*
 	!net-p2p/netsukuku-vala-andnsrpc
 	!net-p2p/netsukuku-vala-coordinator

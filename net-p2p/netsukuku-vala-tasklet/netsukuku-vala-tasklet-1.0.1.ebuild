@@ -21,7 +21,7 @@ RDEPEND="
 	dev-libs/vala-common
 	dev-libs/glib:*
 	dev-libs/libgee:*
-	dev-libs/pth
+	dev-libs/npth
 	!net-p2p/netsukuku-vala-andnsrpc:2.0
 	!net-p2p/netsukuku-vala-coordinator:2.0
 	!net-p2p/netsukuku-vala-meta:2.0
