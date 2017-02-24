@@ -16,11 +16,11 @@ RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="python +tools debug"
+IUSE="-static +shared +log -python +tools -lto"
 
 RDEPEND="
-	>=net-libs/gnutls-3.1.0
-	>=dev-libs/msgpack-1.2.0
+	>=net-libs/gnutls-3.3
+	>=dev-libs/msgpack-1.2
 	tools? ( sys-libs/readline:0 )
 	python? ( ${PYTHON_DEPS} )
 "
@@ -29,9 +29,12 @@ DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
+		$(cmake-utils_use static OPENDHT_STATIC)
+		$(cmake-utils_use shared OPENDHT_SHARED)
+		$(cmake-utils_use log OPENDHT_LOG)
 		$(cmake-utils_use python OPENDHT_PYTHON)
 		$(cmake-utils_use tools OPENDHT_TOOLS)
-		$(cmake-utils_use debug OPENDHT_DEBUG)
+		$(cmake-utils_use lto OPENDHT_LTO)
 	)
 	cmake-utils_src_configure
 }
