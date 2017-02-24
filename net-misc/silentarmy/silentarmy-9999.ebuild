@@ -6,7 +6,7 @@ EAPI=6
 
 inherit git-r3
 
-DESCRIPTION="Zcash miner optimized for AMD & Nvidia GPUs "
+DESCRIPTION="Zcash miner optimized for AMD & Nvidia GPUs"
 HOMEPAGE="https://github.com/mbevand/silentarmy"
 
 EGIT_REPO_URI="https://github.com/mbevand/silentarmy.git"

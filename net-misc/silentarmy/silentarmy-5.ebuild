@@ -4,7 +4,7 @@
 
 EAPI=6
 
-DESCRIPTION="Zcash miner optimized for AMD & Nvidia GPUs "
+DESCRIPTION="Zcash miner optimized for AMD & Nvidia GPUs"
 HOMEPAGE="https://github.com/mbevand/silentarmy"
 SRC_URI="https://github.com/mbevand/silentarmy/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 RESTRICT="mirror"
