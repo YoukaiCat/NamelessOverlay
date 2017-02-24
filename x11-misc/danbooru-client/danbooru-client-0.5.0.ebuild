@@ -27,7 +27,7 @@ RDEPEND="
 	kde-frameworks/kwallet
 	kde-frameworks/kdeclarative
 	kde-frameworks/ki18n
-	kde-frameworks/kfilemetadata
+	kde-frameworks/kfilemetadata:5
 "
 
 DEPEND="${RDEPEND}"
