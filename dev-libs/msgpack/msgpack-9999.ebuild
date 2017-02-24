@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 inherit cmake-multilib
 
 if [[ ${PV} == 9999 ]]; then
@@ -19,22 +19,25 @@ HOMEPAGE="http://msgpack.org/ https://github.com/msgpack/msgpack-c/"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-IUSE="+cxx static-libs test"
+KEYWORDS=""
+IUSE="-cxx11 -32bit -boost -examples +cxx +shared"
 
 DEPEND="
-	test? (
-		>=dev-cpp/gtest-1.6.0-r2[${MULTILIB_USEDEP}]
-		sys-libs/zlib[${MULTILIB_USEDEP}]
-	)
+	dev-cpp/gtest[${MULTILIB_USEDEP}]
+	sys-libs/zlib[${MULTILIB_USEDEP}]
+	boost? ( dev-libs/boost[context] )
 "
 
 DOCS=( README.md )
 
 src_configure() {
 	local mycmakeargs=(
+		$(cmake-utils_use cxx11 MSGPACK_CXX11)
+		$(cmake-utils_use 32bit MSGPACK_32BIT)
+		$(cmake-utils_use boost MSGPACK_BOOST)
+		$(cmake-utils_use examples MSGPACK_BUILD_EXAMPLES)
 		$(cmake-utils_use cxx MSGPACK_ENABLE_CXX)
-		$(cmake-utils_use static-libs MSGPACK_STATIC)
-		$(cmake-utils_use test MSGPACK_BUILD_TESTS)
+		$(cmake-utils_use shared MSGPACK_ENABLE_SHARED)
 	)
 	cmake-multilib_src_configure
 }

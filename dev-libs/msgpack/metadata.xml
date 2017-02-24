@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
+  <use>
+    <flag name='cxx11'>Using c++11 compiler</flag>
+    <flag name='32bit'>32bit compile</flag>
+    <flag name='boost'>Using boost libraries</flag>
+    <flag name='examples'>Build examples</flag>
+    <flag name='cxx'>Enable C++ interface</flag>
+    <flag name='shared'>Build shared libaries in addition to static libraries</flag>
+  </use>
 </pkgmetadata>
