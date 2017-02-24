@@ -11,7 +11,7 @@ HOMEPAGE="https://www.dennogumi.org/projects/danbooru-client/"
 SRC_URI="https://www.dennogumi.org/releases/danbooru-client-${PV}.tar.xz"
 RESTRICT="mirror"
 
-LICENSE="GPL-2"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
@@ -19,6 +19,7 @@ IUSE=""
 RDEPEND="
 	kde-frameworks/kiconthemes
 	kde-frameworks/kcoreaddons
+	kde-frameworks/ktextwidgets
 	kde-frameworks/kguiaddons
 	kde-frameworks/kcompletion
 	kde-frameworks/kxmlgui
