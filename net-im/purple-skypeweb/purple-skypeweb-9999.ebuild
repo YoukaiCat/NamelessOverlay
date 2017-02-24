@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 inherit git-r3
 
@@ -18,6 +18,7 @@ IUSE=""
 
 RDEPEND="
 	net-im/pidgin
+	dev-libs/glib
 	dev-libs/json-glib
 "
 
