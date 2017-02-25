@@ -38,6 +38,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | sys-fs/ciopfs                      | Access a regular directory case-insensitively                          |
 | x11-misc/ahoviewer                 | A GTK2 image viewer, manga reader, and booru browser                   |
 | x11-misc/danbooru-client           | Application to access Danbooru-based image boards                      |
+| x11-misc/imgbrd-grabber            | Imageboard/booru downloader with powerful filenaming features          |
 
 All commits and manifests are signed. Signing key: 0x57EE184C at http://keys.gnupg.net/. Fpr: 68C1 93F3 C8BC EC64 AC6E  092F 405F 3E77 57EE 184C
 
