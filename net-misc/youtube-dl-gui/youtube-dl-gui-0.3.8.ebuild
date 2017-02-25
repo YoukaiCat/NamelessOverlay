@@ -6,16 +6,22 @@ EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit distutils-r1
-
 DESCRIPTION="A cross platform front-end GUI of the popular youtube-dl written in wxPython"
 HOMEPAGE="http://mrs0m30n3.github.io/youtube-dl-gui/"
-SRC_URI="https://github.com/MrS0m30n3/youtube-dl-gui/archive/${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit distutils-r1 git-r3
+	EGIT_REPO_URI="https://github.com/MrS0m30n3/youtube-dl-gui.git"
+	KEYWORDS=""
+else
+	inherit distutils-r1
+	SRC_URI="https://github.com/MrS0m30n3/youtube-dl-gui/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="Unlicense"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	net-misc/youtube-dl

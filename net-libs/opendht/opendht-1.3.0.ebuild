@@ -6,16 +6,22 @@ EAPI=5
 
 PYTHON_COMPAT=( python{3_3,3_4,3_5,3_6} pypy3 )
 
-inherit cmake-utils python-r1
-
 DESCRIPTION="C++11 Distributed Hash Table implementation"
 HOMEPAGE="https://github.com/savoirfairelinux/opendht"
-SRC_URI="https://github.com/savoirfairelinux/opendht/archive/${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit cmake-utils python-r1 git-r3
+	EGIT_REPO_URI="https://github.com/savoirfairelinux/opendht.git"
+	KEYWORDS=""
+else
+	inherit cmake-utils python-r1
+	SRC_URI="https://github.com/savoirfairelinux/opendht/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 IUSE="-static +shared log python tools lto"
 
 RDEPEND="

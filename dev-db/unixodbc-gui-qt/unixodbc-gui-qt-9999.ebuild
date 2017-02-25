@@ -8,10 +8,16 @@ inherit subversion autotools
 
 DESCRIPTION="Qt based GUI for unixODBC"
 HOMEPAGE="http://sourceforge.net/projects/unixodbc-gui-qt/"
-ESVN_REPO_URI="svn://svn.code.sf.net/p/unixodbc-gui-qt/code/trunk"
+
+if [[ ${PV} == "9999" ]] ; then
+	ESVN_REPO_URI="svn://svn.code.sf.net/p/unixodbc-gui-qt/code/trunk"
+	KEYWORDS=""
+else
+	ESVN_REPO_URI="svn://svn.code.sf.net/p/unixodbc-gui-qt/code/trunk@100"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="GPL-3 LGPL-3"
-KEYWORDS=""
 SLOT="0"
 
 DEPEND="

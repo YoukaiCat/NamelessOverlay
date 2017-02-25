@@ -4,15 +4,23 @@
 
 EAPI=6
 
-inherit multiprocessing
-
 DESCRIPTION="Cryptocurrency that offers privacy of transactions"
 HOMEPAGE="https://z.cash/"
-SRC_URI="https://github.com/zcash/zcash/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit multiprocessing git-r3
+	EGIT_REPO_URI="https://github.com/zcash/zcash.git"
+	KEYWORDS=""
+else
+	inherit multiprocessing
+	SRC_URI="https://github.com/zcash/zcash/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+	S=${WORKDIR}/${P}
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 
 DEPEND="
 	sys-libs/ncurses:0
@@ -22,8 +30,6 @@ DEPEND="
 	net-misc/wget
 "
 RDEPEND="${DEPEND}"
-
-S=${WORKDIR}/${P}
 
 src_prepare() {
 	eapply_user

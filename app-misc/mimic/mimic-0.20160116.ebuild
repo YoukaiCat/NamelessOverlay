@@ -12,8 +12,13 @@ DESCRIPTION="Substitutes common ASCII characters to UTF8 homoglyphs"
 HOMEPAGE="https://github.com/reinderien/mimic"
 
 EGIT_REPO_URI="https://github.com/reinderien/mimic"
-EGIT_COMMIT="f2f04419895e8aed3eb76c80fba293fd28abe857"
+
+if [[ ${PV} == "9999" ]] ; then
+	KEYWORDS=""
+else
+	EGIT_COMMIT="f2f04419895e8aed3eb76c80fba293fd28abe857"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"

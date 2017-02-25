@@ -6,12 +6,19 @@ EAPI=6
 
 DESCRIPTION="Zcash miner optimized for AMD & Nvidia GPUs"
 HOMEPAGE="https://github.com/mbevand/silentarmy"
-SRC_URI="https://github.com/mbevand/silentarmy/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/mbevand/silentarmy.git"
+	KEYWORDS=""
+else
+	SRC_URI="https://github.com/mbevand/silentarmy/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
 
 RDEPEND="
 	virtual/opencl

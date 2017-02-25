@@ -4,16 +4,23 @@
 
 EAPI=5
 
-inherit autotools autotools-utils
-
 DESCRIPTION="Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address"
 HOMEPAGE="https://github.com/haakonnessjoen/MAC-Telnet"
-SRC_URI="https://github.com/haakonnessjoen/MAC-Telnet/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit autotools autotools-utils git-r3
+	EGIT_REPO_URI="https://github.com/haakonnessjoen/MAC-Telnet.git"
+	KEYWORDS=""
+else
+	inherit autotools autotools-utils
+	SRC_URI="https://github.com/haakonnessjoen/MAC-Telnet/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
+	S=${WORKDIR}/MAC-Telnet-${PV}
+fi
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
 IUSE=""
 
 RDEPEND="
@@ -21,8 +28,6 @@ RDEPEND="
 "
 
 DEPEND="${RDEPEND}"
-
-S=${WORKDIR}/MAC-Telnet-${PV}
 
 src_prepare() {
 	eaclocal_amflags

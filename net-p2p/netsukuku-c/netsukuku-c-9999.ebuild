@@ -11,9 +11,15 @@ HOMEPAGE="https://github.com/Netsukuku/netsukuku"
 
 EGIT_REPO_URI="https://github.com/Netsukuku/netsukuku.git"
 
+if [[ ${PV} == "9999" ]] ; then
+	KEYWORDS=""
+else
+	EGIT_COMMIT="7cc9e0a2b9a8d0156494e46439faeb3fa42f64f9"
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~x86"
+fi
+
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 
 RDEPEND="
 	dev-libs/gmp:*

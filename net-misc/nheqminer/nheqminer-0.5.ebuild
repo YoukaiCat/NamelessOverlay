@@ -4,16 +4,22 @@
 
 EAPI=5
 
-inherit cmake-utils
-
 DESCRIPTION="Equihash miner from NiceHash"
 HOMEPAGE="https://github.com/nicehash/nheqminer"
-SRC_URI="https://github.com/nicehash/nheqminer/archive/${PV}c.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror"
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit cmake-utils git-r3
+	EGIT_REPO_URI="https://github.com/nicehash/nheqminer.git"
+	KEYWORDS=""
+else
+	inherit cmake-utils
+	SRC_URI="https://github.com/nicehash/nheqminer/archive/${PV}c.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
 IUSE="+cpu_tromp -cpu_xenoncat -cuda_tromp -cuda_djezo"
 
 RDEPEND="

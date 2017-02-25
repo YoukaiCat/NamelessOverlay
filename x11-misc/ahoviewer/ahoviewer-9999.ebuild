@@ -4,16 +4,22 @@
 
 EAPI=5
 
-inherit autotools-utils git-r3
-
 DESCRIPTION="A GTK2 image viewer, manga reader, and booru browser"
 HOMEPAGE="https://github.com/ahodesuka/ahoviewer"
 
-EGIT_REPO_URI="https://github.com/ahodesuka/ahoviewer.git"
+if [[ ${PV} == "9999" ]] ; then
+	inherit autotools-utils git-r3
+	EGIT_REPO_URI="https://github.com/ahodesuka/ahoviewer.git"
+	KEYWORDS=""
+else
+	inherit autotools-utils
+	SRC_URI="https://github.com/ahodesuka/ahoviewer/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	RESTRICT="mirror"
+	KEYWORDS="~amd64 ~x86"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 IUSE=""
 
 RDEPEND="
