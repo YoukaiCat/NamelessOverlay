@@ -1,10 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <use>
-    <flag name='mactelnet'>MAC-telnet client</flag>
-    <flag name='mactelnetd'>MAC-telnet daemon</flag>
-    <flag name='macping'>A tool for pinging other RouterOS or mactelnetd devices</flag>
-    <flag name='mndp'>A tool for discovering other RouterOS or mactelnetd devices</flag>
-  </use>
 </pkgmetadata>
