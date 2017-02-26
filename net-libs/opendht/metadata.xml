@@ -2,8 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <use>
-    <flag name='static'>Build static library</flag>
-    <flag name='shared'>Build shared library</flag>
+    <flag name='static-libs'>Build static library</flag>
+    <flag name='shared-libs'>Build shared library</flag>
     <flag name='log'>Build with logs</flag>
     <flag name='python'>Build Python bindings</flag>
     <flag name='tools'>Build DHT tools</flag>

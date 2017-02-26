@@ -22,7 +22,7 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="-static +shared log python tools lto"
+IUSE="-static-libs +shared-libs log python tools lto"
 
 RDEPEND="
 	>=net-libs/gnutls-3.3
@@ -38,8 +38,8 @@ DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use static OPENDHT_STATIC)
-		$(cmake-utils_use shared OPENDHT_SHARED)
+		$(cmake-utils_use static-libs OPENDHT_STATIC)
+		$(cmake-utils_use shared-libs OPENDHT_SHARED)
 		$(cmake-utils_use log OPENDHT_LOG)
 		$(cmake-utils_use python OPENDHT_PYTHON)
 		$(cmake-utils_use tools OPENDHT_TOOLS)

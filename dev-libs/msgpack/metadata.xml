@@ -7,7 +7,7 @@
     <flag name='boost'>Using boost libraries</flag>
     <flag name='examples'>Build examples</flag>
     <flag name='cxx'>Enable C++ interface</flag>
-    <flag name='shared'>Build shared libaries in addition to static libraries</flag>
+    <flag name='shared-libs'>Build shared libaries in addition to static libraries</flag>
     <flag name='tests'>Build msgpack tests</flag>
   </use>
 </pkgmetadata>
