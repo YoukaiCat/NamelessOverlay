@@ -16,6 +16,7 @@ else
 	SRC_URI="https://github.com/nicehash/nheqminer/archive/${PV}c.tar.gz -> ${P}.tar.gz"
 	RESTRICT="mirror"
 	KEYWORDS="~amd64 ~x86"
+	S="${WORKDIR}/nheqminer-0.5c"
 fi
 
 LICENSE="MIT"
