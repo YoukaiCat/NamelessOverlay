@@ -23,6 +23,7 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | Name                               | Desc                                                                   |
 |------------------------------------|------------------------------------------------------------------------|
 | app-misc/mimic                     | Substitutes common ASCII characters to UTF8 homoglyphs                 |
+| app-misc/tagsistant                | Tag-based filesystem that turns directories into tags and search files |
 | app-misc/tmsu                      | Tag your files and then access them through a virtual filesystem       |
 | dev-db/unixodbc-gui-qt             | Qt based GUI for unixODBC                                              |
 | dev-lang/clips                     | Expert system                                                          |
