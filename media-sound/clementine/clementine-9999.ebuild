@@ -94,6 +94,10 @@ MY_P="${P/_}"
 [[ ${PV} == *9999* ]] || \
 S="${WORKDIR}/${MY_P^}"
 
+PATCHES=(
+	"${FILESDIR}"/database.patch
+)
+
 src_prepare() {
 	cmake-utils_src_prepare
 

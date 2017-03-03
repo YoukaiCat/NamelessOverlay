@@ -1,0 +1,18 @@
+--- a/src/core/database.cpp	2017-03-04 01:52:06.699956125 +0300
++++ b/src/core/database.cpp	2017-03-04 01:51:47.945957510 +0300
+@@ -265,6 +265,15 @@
+   StaticInit();
+
+   {
++#ifdef SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER
++    QVariant v = db.driver()->handle();
++    if (v.isValid() && qstrcmp(v.typeName(), "sqlite3*") == 0) {
++      sqlite3* handle = *static_cast<sqlite3**>(v.data());
++      if (handle) {
++        sqlite3_db_config(handle, SQLITE_DBCONFIG_ENABLE_FTS3_TOKENIZER, 1, NULL);
++      }
++    }
++#endif
+     QSqlQuery set_fts_tokenizer(db);
+     set_fts_tokenizer.prepare("SELECT fts3_tokenizer(:name, :pointer)");
+     set_fts_tokenizer.bindValue(":name", "unicode");
