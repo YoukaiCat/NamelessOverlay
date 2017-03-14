@@ -30,8 +30,9 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              |
 | dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        |
 | media-sound/clementine             | Audio player. Qt5 branch                                               |
-| net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               |
+| media-plugins/kipi-plugins         | KIPI plugins with my patch that added reverse image search plugin      |
 | net-im/purple-skypeweb             | SkypeWeb plugin for Pidgin                                             |
+| net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               |
 | net-libs/opendht                   | C++11 Distributed Hash Table implementation                            |
 | net-misc/mac-telnet                | Mac-Telnet - Connect to RouterOS or mactelnetd devices via MAC address |
 | net-misc/nheqminer                 | Equihash miner from NiceHash                                           |
