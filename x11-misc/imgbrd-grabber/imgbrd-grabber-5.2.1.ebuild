@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -33,10 +32,12 @@ RDEPEND="
 	dev-qt/qtscript:5
 	dev-qt/qtmultimedia:5[pulseaudio]
 	syntax-highlighting? ( x11-libs/qscintilla[qt5] )
-	dev-qt/linguist-tools
 "
 
-DEPEND="${RDEPEND}"
+DEPEND="
+	dev-qt/linguist-tools
+	${RDEPEND}
+"
 
 src_configure() {
 	eqmake5 PREFIX=/usr Grabber.pro
