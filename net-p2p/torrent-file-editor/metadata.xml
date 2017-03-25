@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <use>
+    <flag name='qt4'>Qt4 build</flag>
+    <flag name='qt5'>Qt5 build</flag>
+    <flag name='disable-donation'>Do not show donation text in About dialog</flag>
+  </use>
+</pkgmetadata>

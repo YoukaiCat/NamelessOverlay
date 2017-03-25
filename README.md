@@ -29,8 +29,8 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | dev-lang/clips                     | Expert system                                                          |
 | dev-lang/mosml                     | Moscow ML is a light-weight implementation of Standard ML              |
 | dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        |
+| media-plugins/kipi-plugins         | KIPI plugins with reverse image search plugin                          |
 | media-sound/clementine             | Audio player. Qt5 branch                                               |
-| media-plugins/kipi-plugins         | KIPI plugins with my patch that added reverse image search plugin      |
 | net-im/purple-skypeweb             | SkypeWeb plugin for Pidgin                                             |
 | net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               |
 | net-libs/opendht                   | C++11 Distributed Hash Table implementation                            |
@@ -38,6 +38,8 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | net-misc/nheqminer                 | Equihash miner from NiceHash                                           |
 | net-misc/silentarmy                | Zcash miner optimized for AMD & Nvidia GPUs                            |
 | net-misc/youtube-dl-gui            | Front-end GUI of the popular youtube-dl written in wxPython            |
+| net-p2p/netsukuku-c                | Netsukuku mesh network. C version.                                     |
+| net-p2p/torrent-file-editor        | Qt based GUI tool designed to create and edit .torrent files           |
 | net-p2p/zcash                      | Cryptocurrency that offers privacy of transactions                     |
 | sys-fs/ciopfs                      | Access a regular directory case-insensitively                          |
 | x11-misc/ahoviewer                 | A GTK2 image viewer, manga reader, and booru browser                   |
