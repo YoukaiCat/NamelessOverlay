@@ -31,7 +31,9 @@ Travis CI status: [![Build Status](https://travis-ci.org/YoukaiCat/NamelessOverl
 | dev-libs/msgpack                   | MessagePack is a binary-based efficient data interchange format        |
 | media-plugins/kipi-plugins         | KIPI plugins with reverse image search plugin                          |
 | media-sound/clementine             | Audio player. Qt5 branch                                               |
-| net-im/dino                        | Modern Jabber/XMPP Client using GTK+/Vala                              |               
+| net-im/dino                        | Modern Jabber/XMPP Client using GTK+/Vala                              | 
+| net-im/purple-carbons              | Message Carbons plugin for libpurple                                   |
+| net-im/purple-lurch                | Plugin for libpurple implementing OMEMO                                | 
 | net-im/purple-skypeweb             | SkypeWeb plugin for Pidgin                                             |
 | net-im/purple-vk-plugin            | Vk.com plugin for Pidgin                                               |
 | net-libs/opendht                   | C++11 Distributed Hash Table implementation                            |
