@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-DEPEND=">=dev-libs/protobuf-2.6[python]
+DEPEND="dev-python/protobuf-python
 		dev-python/pycrypto
 		dev-python/python-axolotl-curve25519"
 RDEPEND="${DEPEND}"
