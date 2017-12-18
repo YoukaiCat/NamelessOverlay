@@ -7,11 +7,11 @@ DESCRIPTION="Note taking application features automatic linking, tree view and t
 HOMEPAGE="https://github.com/YoukaiCat/QtSemanticNotes"
 
 if [[ ${PV} == "9999" ]] ; then
-	inherit qmake-utils git-r3
+	inherit eutils qmake-utils git-r3
 	EGIT_REPO_URI="https://github.com/YoukaiCat/QtSemanticNotes.git"
 	KEYWORDS=""
 else
-	inherit qmake-utils
+	inherit eutils qmake-utils
 	SRC_URI="https://github.com/YoukaiCat/QtSemanticNotes/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 	RESTRICT="mirror"
 	KEYWORDS="~amd64 ~x86"
@@ -40,5 +40,9 @@ src_compile() {
 }
 
 src_install() {
-	dobin release/install-root/QtSemanticNotes
+	mv release/install-root/QtSemanticNotes release/install-root/qtsemanticnotes
+	dobin release/install-root/qtsemanticnotes
+	mv resources/Notebook_by_Krishna_Noun_Project_CCBY3.svg resources/qtsemanticnotes.svg
+	doicon -s scalable resources/qtsemanticnotes.svg
+	domenu resources/qtsemanticnotes.desktop
 }
